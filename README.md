@@ -48,7 +48,7 @@ Because of a huge number of result images, folders will only contains several sa
 ```
 ./
 ├── Module/             # Functions: embed/extract, attack, evaluate
-├── Dataset/            # Sample datasets
+├── Dataset/            # Original image from different datasets
 │ ├── DIV2K dataset/
 │ ├── tid2013/
 │ └── ...
@@ -91,6 +91,7 @@ Because of focusing on evaluating the robustness and imperceptibility of waterma
 | Watermarked Image           | `0552_wm.png`               |
 | Metadata File               | `0552_meta.json`            |
 | Attacked Image              | `0552_wm_<attack>.png`      |
+| QR extracted                | `0552_wm_<attack>_qr.png`   |
 | Upload/Download across Zalo | `1_zalo.png`                |
 
 This allows to evaluate the robustness and imperceptibility of watermarking techniques under the assumption that all input watermarked images can be matched and retrieved the corresponding Metadata file.
