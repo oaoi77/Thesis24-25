@@ -45,6 +45,7 @@ https://www.kaggle.com/datasets/felicepollano/watermarked-not-watermarked-images
 
 ## Folder structure 
 Because of a huge number of result images, folders will only contains several sample input/output images. The images will
+```
 ./
 ├── Module/ # Functions: embed/extract, attack, evaluate
 ├── Dataset/ # Sample datasets
@@ -73,7 +74,7 @@ Because of a huge number of result images, folders will only contains several sa
 │ └── mess/
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
-
+```
 ## Note:
 Because of focusing on evaluating the robustness and imperceptibility of watermarking techniques, the Metadata file will be retrieved based on Image file name. For example:
 
