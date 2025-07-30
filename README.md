@@ -47,33 +47,33 @@ https://www.kaggle.com/datasets/felicepollano/watermarked-not-watermarked-images
 Because of a huge number of result images, folders will only contains several sample input/output images. The images will
 ```
 ./
-├── Module/ # Functions: embed/extract, attack, evaluate
-├── Dataset/ # Sample datasets
+├── Module/             # Functions: embed/extract, attack, evaluate
+├── Dataset/            # Sample datasets
 │ ├── DIV2K dataset/
 │ ├── tid2013/
 │ └── ...
-├── Qr_image/ # QR codes for embedding & extraction
+├── Qr_image/           # original and extracted QR image
 │ ├── Original/
 │ │ ├── DIV2K dataset/
 | | └── ...
 │ └── Qr_extracted/
 │ │ ├── DIV2K dataset/
 | | └── ...
-├── Metadata/ # JSON metadata files
+├── Metadata/           # JSON metadata files
 │ ├── DIV2K dataset/
 │ └── ...
-├── Watermarked_image/ # Output watermarked images
+├── Watermarked_image/  # Output watermarked images
 │ ├── DIV2K dataset/
 │ └── ...
-├── Attack_output/ # Attacked watermarked images
+├── Attack_output/      # Attacked watermarked images
 │ ├── DIV2K dataset/
 │ └── ...
-├── behaviour/ # Images after transmission simulation
+├── behaviour/          # Images after transmission simulation
 │ ├── mail/
 │ ├── zalo/
 │ └── mess/
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── requirements.txt    # Python dependencies
+└── README.md           # Project documentation
 ```
 ## Note:
 Because of focusing on evaluating the robustness and imperceptibility of watermarking techniques, the Metadata file will be retrieved based on Image file name. For example:
