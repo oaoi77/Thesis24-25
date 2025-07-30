@@ -43,4 +43,49 @@ https://www.kaggle.com/datasets/felicepollano/watermarked-not-watermarked-images
 > **Note**: However, this project does not install all the images from these datasets, only install a part of them, in details:
 > https://drive.google.com/drive/folders/1zw9CTnPA5-lf4QYPp1KOUI8vNhKgqRMP?usp=sharing 
 
-## Folder structure
+## Folder structure 
+Because of a huge number of result images, folders will only contains several sample input/output images. The images will
+./
+├── Module/                # containing required functions to generate, embed/extract, attack and evaluate watermark...
+├── Dataset/               # containing datasets
+    ├──DIV2K dataset
+    ├──tid2013
+    └──...
+├── Qr_image/              # containing original and Extracted watermark follow datasets
+    ├──Original
+        ├──DIV2K dataset
+        └──...
+    └──Qr_extracted
+        ├──DIV2K dataset
+        └──...
+├── Metadata/              # containing metadata file 
+    ├──DIV2K dataset
+    └──...
+├── Watermarked_image/     # containing watermarked images
+    ├──DIV2K dataset
+    └──...
+├── Attack_output/         # containing attacked watermarked images
+    ├──DIV2K dataset
+    └──...
+├── behaviour/             # containing bahaviour simulation image
+    ├──mail
+    ├──zalo
+    └──mess
+├── requirements.txt       # Python dependencies
+└── README.md              # Project overview
+
+## Note:
+Because of focusing on evaluating the robustness and imperceptibility of watermarking techniques, the Metadata file will be retrieved based on Image file name. For example:
+
+| File Type                   | Example Filename            |
+|-----------------------------|-----------------------------|
+| Original Image              | `0552.png`                  |
+| QR Code Image               | `0552_qr.png`               |
+| Watermarked Image           | `0552_wm.png`               |
+| Metadata File               | `0552_meta.json`            |
+| Attacked Image              | `0552_wm_<attack>.png`      |
+| Upload/Download across Zalo | `1_zalo.png`                |
+
+This allows to evaluate the robustness and imperceptibility of watermarking techniques under the assumption that all input watermarked images can be matched and retrieved the corresponding Metadata file.
+
+On the other hand, the pHash in this thesis just is used for human behaviour simulations case. Suppose the input image is renamed due to uploading and downloading across platforms. In this case, phash will be used to retrieve the Metadata file by finding the hash value closest to the calculated value.
