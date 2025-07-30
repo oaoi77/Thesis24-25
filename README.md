@@ -79,6 +79,7 @@ Because of a huge number of result images, folders will only contains several sa
 ├── extracting.py       # extracting process 
 ├── eval_attack.py      # evaluation with attack
 ├── eval_noattack.py    # evaluation without attack 
+├── Log/                # several csv output files
 └── README.md           # Project documentation
 ```
 ## Note:
