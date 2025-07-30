@@ -73,6 +73,12 @@ Because of a huge number of result images, folders will only contains several sa
 │ ├── zalo/
 │ └── mess/
 ├── requirements.txt    # Python dependencies
+├── attack_batch.py     # executing attack list on images
+├── behaviour.py        # calculating pHash, retrieving Metadata and extracting QR image on transmitted images
+├── embedding.py        # embedding process 
+├── extracting.py       # extracting process 
+├── eval_attack.py      # evaluation with attack
+├── eval_noattack.py    # evaluation without attack 
 └── README.md           # Project documentation
 ```
 ## Note:
