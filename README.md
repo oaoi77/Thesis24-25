@@ -79,6 +79,7 @@ Because of a huge number of result images, folders will only contains several sa
 ├── extracting.py       # extracting process 
 ├── eval_attack.py      # evaluation with attack
 ├── eval_noattack.py    # evaluation without attack 
+├── qr_extract_platform/# extracted QR from behaviour simulation
 ├── Log/                # output log example
 └── README.md           # Project documentation
 ```
